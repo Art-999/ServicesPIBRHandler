@@ -10,11 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <service android:name=".MyService" />
+        <service android:name=".MyService2" />
+        <service android:name=".MyService3" />
 
         <activity android:name=".MainActivity">
 
         </activity>
-        <activity android:name=".Main2Activity">
+        <activity android:name=".MainActivity$Main2Activity"></activity>
+        <activity android:name=".Main3Activity"
+            android:configChanges="orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
